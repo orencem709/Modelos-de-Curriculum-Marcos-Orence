@@ -1,0 +1,194 @@
+/* ATS-Friendly Resume Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.15;
+    color: #000000;
+    background-color: #ffffff;
+    padding: 5px 8px;
+    margin: 0;
+    font-size: 14px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+/* Header */
+.header {
+    margin-bottom: 5px;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 3px;
+}
+
+.header h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 1px;
+}
+
+.header h2 {
+    font-size: 18px;
+    font-weight: normal;
+    color: #333333;
+    margin-bottom: 3px;
+}
+
+.contact-info {
+    margin-top: 3px;
+}
+
+.contact-info p {
+    margin: 0.5px 0;
+    font-size: 13px;
+    color: #000000;
+}
+
+/* Sections */
+.section {
+    margin-bottom: 5px;
+    page-break-inside: avoid;
+}
+
+.section h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 3px;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 1px;
+    text-transform: uppercase;
+}
+
+.section p {
+    margin-bottom: 3px;
+    color: #000000;
+    font-size: 14px;
+}
+
+/* Experience & Education */
+.experience-item,
+.education-item {
+    margin-bottom: 4px;
+    page-break-inside: avoid;
+}
+
+.experience-item h4,
+.education-item h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 1px;
+}
+
+.date {
+    font-size: 13px;
+    color: #333333;
+    font-style: italic;
+    margin-bottom: 1px;
+}
+
+.company {
+    font-size: 13px;
+    color: #000000;
+    margin-bottom: 1px;
+}
+
+.experience-item ul,
+.education-item ul {
+    margin-left: 18px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.experience-item li,
+.education-item li {
+    margin-bottom: 1px;
+    color: #000000;
+    font-size: 14px;
+}
+
+/* Skills */
+.skills-section {
+    margin-bottom: 4px;
+}
+
+.skills-section h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 1px;
+}
+
+.skills-section p {
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 3px;
+}
+
+/* Projects */
+.project-item {
+    margin-bottom: 4px;
+    page-break-inside: avoid;
+}
+
+.project-item h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 1px;
+}
+
+.project-item p {
+    font-size: 14px;
+    color: #000000;
+    margin: 0.5px 0;
+}
+
+/* Print optimization */
+@media print {
+    body {
+        padding: 0;
+        font-size: 10pt;
+    }
+    
+    .section {
+        page-break-inside: avoid;
+    }
+    
+    .header h1 {
+        font-size: 20pt;
+    }
+    
+    .header h2 {
+        font-size: 12pt;
+    }
+}
+
+/* Ensure no complex layouts */
+.container {
+    display: block;
+}
+
+.section {
+    display: block;
+}
+
+/* Remove any animations or transitions */
+* {
+    transition: none !important;
+    animation: none !important;
+}
