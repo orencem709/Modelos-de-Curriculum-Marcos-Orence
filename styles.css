@@ -44,12 +44,16 @@ body {
     grid-template-columns: 1fr;
     gap: 4px;
     align-items: center;
+    text-align: center;
+    justify-items: center;
 }
 
 .profile-section {
     display: flex;
     align-items: center;
     gap: 8px;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .profile-image {
@@ -79,7 +83,7 @@ body {
 }
 
 .contact-info {
-    text-align: left;
+    text-align: center;
 }
 
 .contact-info p {
