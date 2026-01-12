@@ -41,7 +41,7 @@ body {
     color: var(--white);
     padding: 2px 4px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 4px;
     align-items: center;
 }
@@ -79,7 +79,7 @@ body {
 }
 
 .contact-info {
-    text-align: right;
+    text-align: left;
 }
 
 .contact-info p {
@@ -184,7 +184,7 @@ body {
 /* Skills */
 .skills-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     gap: 3px;
 }
 
@@ -223,7 +223,7 @@ body {
 /* Languages */
 .languages {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     gap: 3px;
 }
 
